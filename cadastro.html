@@ -1,123 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/cadastro.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro</title>
 </head>
+
 <body>
+  <div class="container">
+    <ul>
+      <h1>Cadastro de Usuário</h1>
+      <li>
+        <form>
+          Nome:<input type="text" name="nome">
+        </form>
+      </li>
+      <li>
+        <form>
+          Endereço:<input type="text" name="endereco">
+        </form>
+      </li>
+      <li>
+        <form>
+          Email:<input type="email" name="email">
+        </form>
+      </li>
+      <li>
+        <form>
+          Cidade:<input type="text" name="cidade">
+        </form>
+      </li>
+      <li>
+        <form>
+          <label for="esrado">Estado:</label>
+          <select name="estado">
 
-  <ul>
-    <li>
-      <form>
-        Nome:<input type="text" name="nome">
-      </form>
-    </li>
-    <li>
-      <form>
-        Endereço:<input type="text" name="endereco">
-      </form>
-    </li>
-    <li>
-      <form>
-        Email:<input type="email" name="email">
-      </form>
-    </li>
-    <li>
-      <form>
-        Cidade:<input type="text" name="cidade">
-      </form>
-    </li>
-    <li>
-      <form>
-        <label for="esrado">Estado:</label>
-        <select name="estado">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
 
-          <option value="AC">Acre</option>
-          <option value="AL">Alagoas</option>
-          <option value="AP">Amapá</option>
-          <option value="AM">Amazonas</option>
-          <option value="BA">Bahia</option>
-          <option value="CE">Ceará</option>
-          <option value="DF">Distrito Federal</option>
-          <option value="ES">Espírito Santo</option>
-          <option value="GO">Goiás</option>
-          <option value="MA">Maranhão</option>
-          <option value="MT">Mato Grosso</option>
-          <option value="MS">Mato Grosso do Sul</option>
-          <option value="MG">Minas Gerais</option>
-          <option value="PA">Pará</option>
-          <option value="PB">Paraíba</option>
-          <option value="PR">Paraná</option>
-          <option value="PE">Pernambuco</option>
-          <option value="PI">Piauí</option>
-          <option value="RJ">Rio de Janeiro</option>
-          <option value="RN">Rio Grande do Norte</option>
-          <option value="RS">Rio Grande do Sul</option>
-          <option value="RO">Rondônia</option>
-          <option value="RR">Roraima</option>
-          <option value="SC">Santa Catarina</option>
-          <option value="SP">São Paulo</option>
-          <option value="SE">Sergipe</option>
-          <option value="TO">Tocantins</option>
-    
-        </select>
-      </form>
-    </li>
-    <li>
-      <form>
-        Sexo:<input type="radio" name="sexo">
-        <label for="sexo">Feminino</label>
-        <input type="radio" name="sexo">
-        <label for="sexo">Masculino</label>
-      </form>
-    </li>
-    <li>
-      <form>
+          </select>
+        </form>
+      </li>
+      <li>
+        <form>
+          Sexo:<input type="radio" name="sexo">
+          <label for="sexo">Feminino</label>
+          <input type="radio" name="sexo">
+          <label for="sexo">Masculino</label>
+        </form>
+      </li>
+      <li>
         Escolha os gêneros que você mais gosta:
+        <form class="genero">
+          <div class="labels">
+            <input type="checkbox" name="genero">
+            <label for="genero">Ação</label>
+          </div>
 
-        <input type="checkbox" name="genero">
-        <label for="genero">Ação</label>
-    
-        <input type="checkbox" name="genero">
-        <label for="genero">Aventura</label>
-    
-        <input type="checkbox" name="genero">
-        <label for="genero">Comédia</label>
-    
-        <input type="checkbox" name="genero">
-        <label for="genero">Drama</label>
-    
-        <input type="checkbox" name="genero">
-        <label for="genero">Romance</label>
-    
-        <input type="checkbox" name="genero">
-        <label for="genero">Suspense</label>
-    
-        <input type="checkbox" name="genero">
-        <label for="genero">Terror</label>
-      </form>
-    </li>
-    <li>
-      <form>
-        Usuário:<input type="text" name="usuario">
-      </form>
-    </li>
-    <li>
-      <form>
-        Senha:<input type="password" name="senha">
-      </form>
-    </li>
-  </ul>
+          <div class="labels">
+          <input type="checkbox" name="genero">
+          <label for="genero">Aventura</label>
+        </div>
+          <div class="labels">
+          <input type="checkbox" name="genero">
+          <label for="genero">Comédia</label>
+        </div>
+          <div class="labels">
+          <input type="checkbox" name="genero">
+          <label for="genero">Drama</label>
+        </div>
 
-  <form action="cadastro.html">
-    <button>Cancelar</button>
-    <button>Limpar</button>
-    <button>Enviar</button>
-  </form>
+          <div class="labels">
+          <input type="checkbox" name="genero">
+          <label for="genero">Romance</label>
+        </div>
+          <div class="labels">
+          <input type="checkbox" name="genero">
+          <label for="genero">Suspense</label>
+        </div>
 
-  <a href="index.html">Voltar</a>
-  
+          <div class="labels">
+          <input type="checkbox" name="genero">
+          <label for="genero">Terror</label>
+        </div>
+        </form>
+      </li>
+      <li>
+        <form>
+          Usuário:<input type="text" name="usuario">
+        </form>
+      </li>
+      <li>
+        <form>
+          Senha:<input type="password" name="senha">
+        </form>
+      </li>
+    </ul>
+
+    <form class="formEnd" action="cadastro.html">
+      <button>Cancelar</button>
+      <button>Limpar</button>
+      <button>Enviar</button>
+    </form>
+
+    <a href="index.html">Voltar</a>
+
+  </div>
+
 </body>
+
 </html>
